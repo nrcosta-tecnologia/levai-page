@@ -39,8 +39,9 @@
   .feature-row.reverse { flex-direction: row-reverse; }
   .feature-text { flex: 1 1 340px; min-width: 0; }
   .feature-images { flex: none; display: flex; gap: 20px; align-items: flex-start; max-width: 100%; }
-  .feature-images img { width: 250px; }
-  .feature-images-single img { width: 280px; }
+  .feature-images > div { width: 250px; flex: none; }
+  .feature-images img { width: 100%; display: block; }
+  .feature-images-single > div { width: 280px; }
 
   .section-pad { padding: 104px 32px; }
   .hero-pad { padding: 96px 32px 0; }
@@ -62,9 +63,9 @@
     .feature-title { font-size: 26px; }
     .cta-box { padding: 40px 24px; }
     .cta-title { font-size: 28px; }
-    .feature-images { flex-wrap: wrap; }
-    .feature-images img { width: 45%; min-width: 140px; }
-    .feature-images-single img { width: 100%; max-width: 280px; }
+    .feature-images { flex-wrap: wrap; justify-content: center; }
+    .feature-images > div { width: 44%; min-width: 130px; max-width: 200px; }
+    .feature-images-single > div { width: 100%; max-width: 280px; }
   }
 </style>
 </head>
